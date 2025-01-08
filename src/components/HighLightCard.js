@@ -11,7 +11,7 @@ const HighlightCard = () => {
         <Box pl="40px" pr="40px" display="flex" justifyContent="space-between" backgroundColor="#f7fafc">
             <Grid templateColumns="repeat(3, 1fr)" gap="21px" textAlign="center">
                 {highlights.map((highlight, index) => (
-                    <Card W='226px' key={index} _hover={{ transform: "scale(1.01)" }}>
+                    <Card W='226px' key={index} _hover={{ transform: "scale(1.01)" }} shadow="none" borderRadius="15px">
                         <CardBody p={0}>
                             <Image
                                 src={highlight.photo}
