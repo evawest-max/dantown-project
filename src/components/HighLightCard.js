@@ -17,6 +17,7 @@ const HighlightCard = () => {
                                 src={highlight.photo}
                                 alt='Green double couch with wooden legs'
                                 borderRadius='lg'
+                                borderBottomRadius="none"
                                 w="100%"
                                 h="205px"
                             />
