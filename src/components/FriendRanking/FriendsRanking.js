@@ -15,7 +15,7 @@ const FriendsRank = () => {
             <Box bg="white" p="24px" borderRadius="15px">
                 <Box display="flex" justifyContent="space-between" alignItems="center">
                     <Text size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">Friends Rank</Text>
-                    <Text display="flex" gap="12px"><BsDot /><BsDot /></Text>
+                    <Text display="flex"  justifyContent="space-between" w="22px"><BsDot /><BsDot /></Text>
                 </Box>
 
                 <Box
