@@ -86,7 +86,7 @@ export function MobileChatbox() {
                                             direction={{ base: 'column', sm: 'row' }}
                                             overflow='hidden'
                                             variant='none'
-                                            h="56px"
+                                            // h="56px"
                                             w="320px"
                                         >
                                             <Image
