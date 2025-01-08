@@ -11,7 +11,7 @@ const FriendsRank = () => {
         { rank: 4, name: "Shakira Wakawaka", category: "Yogas", points: 1280, photo: "https://i.pinimg.com/originals/c8/3f/7e/c83f7e2c623dd570821c07a16913432a.jpg" },
     ];
     return (
-        <Box p="40px" pt="30px" display="flex" flexDirection="column" backgroundColor="#f7fafc" >
+        <Box p="40px" pt="30px" display={['none', 'none','flex', 'flex', 'flex', 'flex']} flexDirection="column" backgroundColor="#f7fafc" >
             <Box bg="white" p="24px" borderRadius="15px">
                 <Box display="flex" justifyContent="space-between" alignItems="center">
                     <Text size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">Friends Rank</Text>
@@ -48,7 +48,7 @@ const FriendsRank = () => {
                                 mb="15px"
                                 id={friend.rank !== 1 && "adjust"}
                             >
-                                <Text id={friend.rank === 1 ? "clippedDiv" : "clippedDivNone"} textAlign="center" >{friend.rank} </Text>
+                                <Text id={friend.rank === 1 ? "clippedDiv" : "clippedDivNone"} >{friend.rank} </Text>
                                 <Box display="flex" alignItems="center" gap="13px">
                                     <Image w="40px" h="40px" borderRadius="50%" src={friend.photo} alt="Friend image" />
                                     <Text color="#0F3F62" display="flex" alignItems="center" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir" justifyContent="space-between" w="224px" textAlign="left">{friend.name}{friend.rank === 1 && <FaCrown style={{ color: "gold" }} />}</Text>
