@@ -47,7 +47,7 @@ export function MobileNav() {
                 <DrawerContent>
                     <DrawerCloseButton shadow="none"/>
                     <DrawerHeader>
-                        <Box display="flex" justifyContent="space-between" w="135px" h="27px" mt="42px" mb="35">
+                        <Box display="flex" justifyContent="space-between" w="135px" h="27px" mt="42px" mb="35" gap="9.27px">
                             <Image src='https://bcassetcdn.com/public/blog/wp-content/uploads/2023/02/28141228/orange-abstract-letter-a-by-bryad-brandcrowd.png' maxW="16.71px" maxH="24px" alt="logo" />
                             <Text maxW="109px" maxH="27px" size="20px" fontWeight="800px" lineHeight="27.32px" fontFamily="Avenir" color=" #F4694C">
                                 Sedboi.euy
