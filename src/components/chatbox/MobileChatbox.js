@@ -74,7 +74,7 @@ export function MobileChatbox() {
                         </Box>
                     </DrawerHeader>
                     <DrawerBody>
-                        <Box display="flex" flexDirection="column" alignItems="center" borderLeft="1px solid #ebeff1" bg="#f7fafc" h="100%">
+                        <Box display="flex" flexDirection="column" alignItems="center" borderLeft="1px solid #ebeff1" bg="#f7fafc" h="100%" mb={20}>
                             <Box width="320px" mb="40px" mt="50px" bg="white" >
                                 <Box w="96px" mb="24px" h="25px" display="flex" justifyContent="space-between" alignItems="center">
                                     <Text color="#0F3F62" fontWeight="900px" size="18px" lineHeight="24.59px" fontFamily="avenir" className="text-xl font-bold mb-2">Chats</Text>
