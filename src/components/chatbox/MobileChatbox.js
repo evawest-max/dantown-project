@@ -43,7 +43,7 @@ export function MobileChatbox() {
 
             <Drawer onClose={onClose} isOpen={isOpen} size={size} placement='left'>
                 <DrawerOverlay />
-                <DrawerContent pb="80px">
+                <DrawerContent pb="120px">
                     <DrawerCloseButton shadow="none" />
                     <DrawerHeader>
                         <Box display="flex" flexDirection="row" alignItems="center" mt="40px" mb="80px" w="100%" gap="41.35px">
