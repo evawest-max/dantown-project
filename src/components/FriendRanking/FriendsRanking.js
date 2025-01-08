@@ -11,7 +11,7 @@ const FriendsRank = () => {
         { rank: 4, name: "Shakira Wakawaka", category: "Yogas", points: 1280, photo: "https://i.pinimg.com/originals/c8/3f/7e/c83f7e2c623dd570821c07a16913432a.jpg" },
     ];
     return (
-        <Box p="40px" pt="30px" display={['none', 'none','flex', 'flex', 'flex', 'flex']} flexDirection="column" backgroundColor="#f7fafc" >
+        <Box p="40px" pt="30px" display={['none', 'none','none', 'flex', 'flex', 'flex']} flexDirection="column" backgroundColor="#f7fafc" >
             <Box bg="white" p="24px" borderRadius="15px">
                 <Box display="flex" justifyContent="space-between" alignItems="center">
                     <Text size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">Friends Rank</Text>
