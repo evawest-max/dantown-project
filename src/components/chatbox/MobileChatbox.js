@@ -46,7 +46,7 @@ export function MobileChatbox() {
                 <DrawerContent>
                     <DrawerCloseButton shadow="none" />
                     <DrawerHeader>
-                        <Box display="flex" flexDirection="row" alignItems="center" mt="40px" w="100%" gap="41.35px">
+                        <Box display="flex" flexDirection="row" alignItems="center" mt="40px" mb="80px" w="100%" gap="41.35px">
                             <Box h="13.5px" ml="94" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" gap="27.5px">
                                 <Text color=" #0F3F62">
                                     <IoMailOutline style={{ width: "18px", height: "13.5px" }} />
