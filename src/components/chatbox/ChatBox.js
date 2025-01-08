@@ -2,6 +2,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Box, Button, Card, CardBody, Heading, Image, Menu, MenuButton, MenuItem, MenuList, Stack, Text } from '@chakra-ui/react';
 import { IoMailOutline } from "react-icons/io5";
 import { RiNotification2Line } from "react-icons/ri";
+import { GoDotFill } from "react-icons/go";
 import Chat from './chat';
 
 
@@ -19,8 +20,11 @@ const ChatBox = () => {
                     <Text color=" #0F3F62">
                         <IoMailOutline style={{ width: "18px", height: "13.5px" }} />
                     </Text>
-                    <Text color=" #0F3F62" pos>
+                    <Text color=" #0F3F62" position="relative">
                         <RiNotification2Line />
+                        {messages.map((message, index) => (
+                            message.newMessage&&<GoDotFill style={{ color: "red", position: "absolute", top: "-5px", left: "5px" }} />
+                        ))}
                     </Text>
                 </Box>
                 <Box mr="40px" w="164px" h="50px" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
