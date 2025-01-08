@@ -26,12 +26,12 @@ const Chat = () => {
                         return (
                             message.name === "receiver" ?
                                 <Box mb="24px" display="flex" justifyContent="space-between" w="263px">
-                                    <Text size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" color=" #5DC2C4" bg=" #E0F3F3" p="10px" minH="38px" textAlign="center" alignContent="center">{message.text}</Text>
+                                    <Text size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" color=" #5DC2C4" bg=" #E0F3F3" p="10px" minH="38px" textAlign="left" alignContent="center">{message.text}</Text>
                                     <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
                                 </Box> :
                                 <Box mb="16px" display="flex" justifyContent="space-between">
                                     <Text alignSelf="end" color="#8695A0" size="13px">{message.time}</Text>
-                                    <Text background=" #5DC2C4" color="white" size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" h="38px" textAlign="center" alignContent="center">{message.text}</Text>
+                                    <Text background=" #5DC2C4" color="white" size="13px" fontWeight="400px" lineHeight="17.76px" borderRadius="10px" w="197px" p="10px" minH="38px" textAlign="right" alignContent="center">{message.text}</Text>
                                 </Box>
                         )
                     })}
