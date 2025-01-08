@@ -19,11 +19,11 @@ const HighlightCard = () => {
                                 borderRadius='lg'
                                 borderBottomRadius="none"
                                 w="100%"
-                                h="205px"
+                                h={['none', 'none', 'none', 'none', '205px', '205px']}
                             />
-                            <Stack mt='20px' spacing='3' mb="24px">
-                                <Text mb="10px" fontWeight="900px" size="16px" fontFamily="Avenir" lineHeight="21.86px" >{highlight.title}</Text>
-                                <Text mb="10px" fontWeight="400px" size="14px" lineHeight="19.12px">
+                            <Stack mt='20px' spacing='3' mb={["5px", "5px", "5px", "5px", "24px", "24px"]}>
+                                <Text mb={["3px", "3px", "3px", "3px", "10px", "10px"]} fontWeight="900px" size="16px" fontFamily="Avenir" lineHeight="21.86px" >{highlight.title}</Text>
+                                <Text mb={["3px", "3px", "3px", "3px", "10px", "10px"]} fontWeight="400px" size="14px" lineHeight="19.12px">
                                     {highlight.description}
                                 </Text>
                             </Stack>
