@@ -1,0 +1,32 @@
+#clippedDiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 28px;
+    height: 32px;
+    background-color: #54bcbd;
+    color: white;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 50% 70%, 0 35%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 50% 70%, 0 35%, 0 0);
+}
+
+#clippedDivNOne {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 28px;
+    height: 32px;
+    background-color: #54bcbd;
+    color: #0F3F62;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+#adjust{
+    margin-left: 12px;
+}
