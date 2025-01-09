@@ -23,7 +23,7 @@ const ChatBox = () => {
                     <Text color=" #0F3F62" position="relative">
                         <RiNotification2Line />
                         {messages.map((message, index) => (
-                            message.newMessage&&<GoDotFill style={{ color: "red", position: "absolute", top: "-5px", left: "5px" fontSize:"small" }} />
+                            message.newMessage&&<GoDotFill style={{ color: "red", position: "absolute", top: "-5px", left: "5px",fontSize:"small" }} />
                         ))}
                     </Text>
                 </Box>
@@ -45,7 +45,7 @@ const ChatBox = () => {
                 </Box>
             </Box>
 
-            <Box width="320px" mb="40px" mt="50px" bg="white" >
+            <Box width="320px" mb="40px" mt="50px" bg="none" >
                 <Box w="96px" mb="24px" h="25px" display="flex" justifyContent="space-between" alignItems="center">
                     <Text color="#0F3F62" fontWeight="900px" size="18px" lineHeight="24.59px" fontFamily="avenir" className="text-xl font-bold mb-2">Chats</Text>
                     <Text w="37px" h="24px" borderRadius="20px" bg=" #E0F3F3" color=" #54BCBD" textAlign="center">14</Text>
@@ -58,6 +58,7 @@ const ChatBox = () => {
                             variant='none'
                             h="56px"
                             w="320px"
+                            bg="none"
                         >
                             <Image
                                 objectFit='cover'
