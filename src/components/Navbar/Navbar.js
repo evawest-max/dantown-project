@@ -77,7 +77,7 @@ const Navbar = () => {
             <Box h="1px" w="170px" bg="#D6DCE0" mt="42px" mb="40px"></Box>
 
             <section style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
-                <Text w="72px" h="22px" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">
+                <Text w="160px" h="22px" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">
                     Category
                 </Text>
                 <Link className='navLink' href="/" >
