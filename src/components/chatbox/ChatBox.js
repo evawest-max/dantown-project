@@ -23,7 +23,7 @@ const ChatBox = () => {
                     <Text color=" #0F3F62" position="relative">
                         <RiNotification2Line />
                         {messages.map((message, index) => (
-                            message.newMessage&&<GoDotFill style={{ color: "red", position: "absolute", top: "-5px", left: "5px" }} />
+                            message.newMessage&&<GoDotFill style={{ color: "red", position: "absolute", top: "-5px", left: "5px" fontSize:"small" }} />
                         ))}
                     </Text>
                 </Box>
