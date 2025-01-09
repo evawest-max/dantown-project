@@ -11,11 +11,11 @@ const FriendsRank = () => {
         { rank: 4, name: "Shakira Wakawaka", category: "Yogas", points: 1280, photo: "https://i.pinimg.com/originals/c8/3f/7e/c83f7e2c623dd570821c07a16913432a.jpg" },
     ];
     return (
-        <Box p="40px" pt="30px" display="flex" flexDirection="column" backgroundColor="#f7fafc" >
+        <Box p="40px" pt="30px" display={['none', 'none', 'none', 'flex', 'flex', 'flex']} flexDirection="column" backgroundColor="#f7fafc" >
             <Box bg="white" p="24px" borderRadius="15px">
                 <Box display="flex" justifyContent="space-between" alignItems="center">
                     <Text size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">Friends Rank</Text>
-                    <Text display="flex" gap="12px"><BsDot /><BsDot /></Text>
+                    <Text display="flex"  justifyContent="space-between" w="22px"><BsDot /><BsDot /></Text>
                 </Box>
 
                 <Box
@@ -25,9 +25,10 @@ const FriendsRank = () => {
                     h="40px"
                     mt="15px"
                     mb="15px"
+                    mr="73px"
                 >
                     <Text textAlign="center" >Rank </Text>
-                    <Box display="flex" alignItems="center" gap="13px" ml="-25px">
+                    <Box display="flex" alignItems="center" gap="13px" ml="-16px">
 
                         <Text display="flex" alignItems="center" size="14px" fontWeight="800px" lineHeight="19.12px" justifyContent="space-between" w="224px" textAlign="left">Name</Text>
                     </Box>
@@ -46,27 +47,32 @@ const FriendsRank = () => {
                                 h="40px"
                                 mt="15px"
                                 mb="15px"
-                                id={friend.rank !== 1 && "adjust"}
+                                mr="73px"
                             >
-                                <Text id={friend.rank === 1 ? "clippedDiv" : "clippedDivNone"} textAlign="center" >{friend.rank} </Text>
-                                <Box display="flex" alignItems="center" gap="13px">
+                                <Text id={friend.rank === 1 ? "clippedDiv" : "clippedDivNOne"} >{friend.rank} </Text>
+                                <Box display="flex" alignItems="center" gap="13px" >
                                     <Image w="40px" h="40px" borderRadius="50%" src={friend.photo} alt="Friend image" />
-                                    <Text color="#0F3F62" display="flex" alignItems="center" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir" justifyContent="space-between" w="224px" textAlign="left">{friend.name}{friend.rank === 1 && <FaCrown style={{ color: "gold" }} />}</Text>
+                                    <Text color="#0F3F62" display="flex" alignItems="center" pr="29px" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir" justifyContent="space-between" w="224px" textAlign="left">{friend.name}{friend.rank === 1 && <FaCrown style={{ color: " #FBAF29", width:"26px", height:"18px" }} />}</Text>
                                 </Box>
-                                <Text size="14px" fontWeight="400px" lineHeight="19.12px" w="102px" h="32px" borderRadius="30px" bg={
+                                <Text size="14px" fontWeight="400px"  lineHeight="19.12px" w="102px" h="32px" borderRadius="30px" bg={
                                     friend.category === "Skaters" ? "#e7f7f8" :
                                         friend.category === "Cyclist" ? "#dafdff" :
                                             friend.category === "Skaters" ? "#e7f7f8" :
                                                 friend.category === "Yogas" && "#ffece8"
-                                } display="flex" justifyContent="center" alignItems="center"><Box w="8px" h="8px" borderRadius="50%" gap="8px" bg={
-                                    friend.category === "Skaters" ? "#54bcbd" :
-                                        friend.category === "Cyclist" ? "#3debf6" :
-                                            friend.category === "Skaters" ? "#54bcbd" :
-                                                friend.category === "Yogas" && "#f4694c"
-                                }></Box>{friend.category}</Text>
+                                } display="flex" justifyContent="center" gap="8px" alignItems="center"
+                                >
+                                    <Box w="8px" h="8px" borderRadius="50%" gap="8px" bg={
+                                        friend.category === "Skaters" ? "#54bcbd" :
+                                            friend.category === "Cyclist" ? "#3debf6" :
+                                                friend.category === "Skaters" ? "#54bcbd" :
+                                                    friend.category === "Yogas" && "#f4694c"
+                                    }>
+                                    </Box> 
+                                    {friend.category}
+                                </Text>
                                 <Text color="#0F3F62" size="16px" fontWeight="500px" lineHeight="21.86px">{friend.points}</Text>
                             </Box>
-                            {index < 3 ? <Box alignSelf="end" w="599px" bg="#D6DCE0" h="1px"></Box> : <Text></Text>}
+                            {index < 3 ? <Box alignSelf="end" w="641px" bg="#D6DCE0" h="1px"></Box> : <Text></Text>}
                         </Box>
                     ))}
                 </Box>

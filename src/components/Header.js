@@ -33,7 +33,7 @@ const Header = () => {
                         <Input
                             type="text"
                             placeholder="Search here"
-                            w="320px"
+                            w={['100%', '100%', '100%', '100%', "320px", "320px"]}
                             h="50px"
                             borderRadius="50px"
                             bg="white"

@@ -41,9 +41,9 @@ export function MobileChatbox() {
                 >Chatbox</Button>
             ))}
 
-            <Drawer onClose={onClose} isOpen={isOpen} size={size} placement='left'>
+            <Drawer onClose={onClose} isOpen={isOpen} size={size} placement='left' >
                 <DrawerOverlay />
-                <DrawerContent>
+                <DrawerContent pb="120px">
                     <DrawerCloseButton shadow="none" />
                     <DrawerHeader>
                         <Box display="flex" flexDirection="row" alignItems="center" mt="40px" w="100%" gap="41.35px">
@@ -73,8 +73,8 @@ export function MobileChatbox() {
                             </Box>
                         </Box>
                     </DrawerHeader>
-                    <DrawerBody>
-                        <Box display="flex" flexDirection="column" alignItems="center" borderLeft="1px solid #ebeff1" bg="#f7fafc" h="100%">
+                    <DrawerBody >
+                        <Box display="flex" flexDirection="column" alignItems="center" borderLeft="1px solid #ebeff1" bg="#f7fafc" h="100%" >
                             <Box width="320px" mb="40px" mt="50px" bg="white" >
                                 <Box w="96px" mb="24px" h="25px" display="flex" justifyContent="space-between" alignItems="center">
                                     <Text color="#0F3F62" fontWeight="900px" size="18px" lineHeight="24.59px" fontFamily="avenir" className="text-xl font-bold mb-2">Chats</Text>
@@ -86,7 +86,7 @@ export function MobileChatbox() {
                                             direction={{ base: 'column', sm: 'row' }}
                                             overflow='hidden'
                                             variant='none'
-                                            h="56px"
+                                            // h="56px"
                                             w="320px"
                                         >
                                             <Image

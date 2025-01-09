@@ -2,6 +2,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Box, Button, Card, CardBody, Heading, Image, Menu, MenuButton, MenuItem, MenuList, Stack, Text } from '@chakra-ui/react';
 import { IoMailOutline } from "react-icons/io5";
 import { RiNotification2Line } from "react-icons/ri";
+import { GoDotFill } from "react-icons/go";
 import Chat from './chat';
 
 
@@ -19,8 +20,11 @@ const ChatBox = () => {
                     <Text color=" #0F3F62">
                         <IoMailOutline style={{ width: "18px", height: "13.5px" }} />
                     </Text>
-                    <Text color=" #0F3F62" pos>
+                    <Text color=" #0F3F62" position="relative">
                         <RiNotification2Line />
+                        {messages.map((message, index) => (
+                            message.newMessage&&<GoDotFill style={{ color: "red", position: "absolute", top: "-5px", left: "5px",fontSize:"small" }} />
+                        ))}
                     </Text>
                 </Box>
                 <Box mr="40px" w="164px" h="50px" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
@@ -41,7 +45,7 @@ const ChatBox = () => {
                 </Box>
             </Box>
 
-            <Box width="320px" mb="40px" mt="50px" bg="white" >
+            <Box width="320px" mb="40px" mt="50px" bg="none" >
                 <Box w="96px" mb="24px" h="25px" display="flex" justifyContent="space-between" alignItems="center">
                     <Text color="#0F3F62" fontWeight="900px" size="18px" lineHeight="24.59px" fontFamily="avenir" className="text-xl font-bold mb-2">Chats</Text>
                     <Text w="37px" h="24px" borderRadius="20px" bg=" #E0F3F3" color=" #54BCBD" textAlign="center">14</Text>
@@ -54,6 +58,7 @@ const ChatBox = () => {
                             variant='none'
                             h="56px"
                             w="320px"
+                            bg="none"
                         >
                             <Image
                                 objectFit='cover'
