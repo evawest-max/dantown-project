@@ -1,11 +1,10 @@
 #clippedDiv {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 28px;
     height: 32px;
     background-color: #54bcbd;
-    padding-top: 3px;
     color: white;
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 50% 70%, 0 35%, 0 0);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -14,10 +13,10 @@
 #clippedDivNOne {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 28px;
     height: 32px;
-    background-color: #54bcbd;
+    background-color: white;
     color: #0F3F62;
     font-family: Avenir;
     font-size: 16px;
