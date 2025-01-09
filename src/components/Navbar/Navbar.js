@@ -78,7 +78,11 @@ const Navbar = () => {
 
             <section style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
                 <Text w="160px" h="22px" size="16px" fontWeight="800px" lineHeight="21.86px" fontFamily="Avenir">
+<<<<<<< HEAD
                     Category 
+=======
+                    Category
+>>>>>>> acd0250a9fd5eaa92c0b2ba4945ff1a72f77f97e
                 </Text>
                 <Link className='navLink' href="/" >
                     <Box display="flex" alignItems="center" ml="40px" gap="19px">
